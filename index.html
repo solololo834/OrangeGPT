@@ -4,55 +4,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>OrangeGPT-2 - AI Assistant</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<header>
-  
-<img src="orange.png" alt="" width="150px" height="150px"/>
-  <h1>OrangeGPT-2 by openFood</h1>
-</header>
-
-
 <body>
+  <header>
+    <img src="orange.png" alt="OrangeGPT Logo" width="150px" height="150px" id="logo"/>
+    <h1>OrangeGPT-2 by openFood</h1>
+  </header>
 
-<br />
-<br />
-<br />
-<br /><br />
-<br />
-<img src="lemon.jpg" alt="" id="lemon"style="width: 150px; height: 100px;" hidden/>
-<img src="drawinh.png" alt="" id="drawing"style="width: 150px; height: 100px;" hidden/>
-<img src="face.jpg" alt="" id="face"style="width: 150px; height: 100px;" hidden/>
-<audio src="voice.mp3" id="voice" controls hidden>My voice</audio>
-<audio src="rizz.mp3" id="rizzs"controls hidden>Rizz sound effect</audio>
-<audio src="favsong.mp3" id="song"controls hidden>fav song</audio>
-<h1 id="B" style="background-color: gray;">i dont understand bradar</h1>
-<br />
-<br />
-<br /><br />
-<br />
+  <!-- Chat Container -->
+  <div class="chat-container">
+    <p>OrangeGPT</p>
 
+    <!-- Chat messages will be added here -->
+    <div class="chat-messages" id="chatMessages">
+      <!-- Welcome message from AI -->
+      <div class="message ai-message">
+        <img src="orange.png" alt="AI Profile" class="profile-pic" id="pfp">
+        <div class="message-content">
+          <div class="message-bubble" id="B">
+            Hello i am orangeGPT 🍊
+          </div>
+          <span class="message-time">Just now</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Hidden images and audio (tetap ada) -->
+    <div hidden>
+      <img src="lemon.jpg" alt="" id="lemon" style="width: 150px; height: 100px;"/>
+      <img src="drawinh.png" alt="" id="drawing" style="width: 150px; height: 100px;"/>
+      <img src="face.jpg" alt="" id="face" style="width: 150px; height: 100px;"/>
+      <audio src="voice.mp3" id="voice" controls>My voice</audio>
+      <audio src="rizz.mp3" id="rizzs" controls>Rizz sound effect</audio>
+      <audio src="favsong.mp3" id="song" controls>fav song</audio>
+    </div>
+    
+    <!-- Status message (yang lama) 
+  </div>
 
+  <!-- Input Area -->
+  <div class="input-container">
+    <input type="text" name="" id="A" value="" placeholder="Ask OrangeGPT..." />
+    <button type="button" id="C">SEND</button>
+  </div>
 
-
-
-
-<input type="text" name="" id="A" value="" style="background-color: blue; border: none; border-radius: 15px; weight:215px; height:75px;" />
-
-<button type="button" id="C">SEND</button>
-
-<br />
-<br />
-<br />
-
-<p> chat me if there is a bug twin</p>
-
-
-
-
+  <p> chat me if there is a bug twin</p>
 
   <script src="test.js" type="text/javascript" charset="utf-8"></script>
 </body>
 
-</html>
+  </html>
