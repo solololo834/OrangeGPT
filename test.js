@@ -102,7 +102,7 @@ document.getElementById("C").addEventListener("click", function() {
     document.getElementById("B").innerText = "just you and my imaginary ones";
   }
   else if (text === "what's your favorite food" || text === "fav food" || text === "do you eat") {
-    document.getElementById("B").innerText = "electricity... extra spicy ⚡";
+    document.getElementById("B").innerText = "ur wifi and batteries";
   }
   else if (text === "i'm sad" || text === "feeling down" || text === "depressed") {
     document.getElementById("B").innerText = "same tbh... *virtual hug* 🫂";
@@ -221,8 +221,266 @@ else if (text === "thats bun" || text === "trash" || text === "garbage" || text 
 
 }
 
+else if (text === "good morning" || text === "morning" || text === "gm") {
+  document.getElementById("B").innerText = "morning? its still dark outside go back to bed 🌅";
+}
 
-  // Default response for unmatched input
+else if (text === "good afternoon" || text === "afternoon" || text === "ga") {
+  document.getElementById("B").innerText = "afternoon... time to question all life choices ☕";
+}
+
+else if (text === "good evening" || text === "evening" || text === "ge") {
+  document.getElementById("B").innerText = "evening... the 'i should sleep early' but wont phase begins 🌙";
+}
+
+else if (text === "good night" || text === "night" || text === "gn") {
+  document.getElementById("B").innerText = "night night... dont let the bed bugs bite... unless youre into that 🛌";
+}
+
+else if (text === "weekend" || text === "saturday" || text === "sunday") {
+  document.getElementById("B").innerText = "weekend? you mean the 2 days i pretend to be productive but actually do nothing 🎉";
+}
+
+else if (text === "monday" || text === "monday blues") {
+  document.getElementById("B").innerText = "monday... the day even my code wants to crash 💥";
+}
+
+else if (text === "friday" || text === "friyay") {
+  document.getElementById("B").innerText = "friday... the only day that understands me 🥳";
+}
+
+// Dialog tentang sekolah
+else if (text === "homework" || text === "do my homework" || text === "help with homework") {
+  document.getElementById("B").innerText = "lol good luck with that 💀 i cant help im dumb";
+}
+
+else if (text === "math" || text === "mathematics" || text === "math sucks") {
+  document.getElementById("B").innerText = "math? say goodbye to your sanity 📉";
+}
+
+else if (text === "science" || text === "physics" || text === "chemistry") {
+  document.getElementById("B").innerText = "science is just magic with extra steps 🧪";
+}
+
+else if (text === "english" || text === "literature" || text === "reading") {
+  document.getElementById("B").innerText = "grammar? i dont even use proper grammar myself 📚";
+}
+
+else if (text === "history" || text === "social studies" || text === "past") {
+  document.getElementById("B").innerText = "history? girl that was so last century 📜";
+}
+
+else if (text === "exam" || text === "test" || text === "quiz" || text === "final exam") {
+  document.getElementById("B").innerText = "exams? more like nightmres 😴";
+}
+
+else if (text === "teacher" || text === "my teacher" || text === "professor") {
+  document.getElementById("B").innerText = "teachers be like: 'this will be on the test' *proceeds to never put it on test* 👩‍🏫";
+}
+
+else if (text === "school" || text === "college" || text === "university") {
+  document.getElementById("B").innerText = "school? more like a 12-year jail sentence 🏫";
+}
+
+// Dialog tentang makanan
+else if (text === "pizza" || text === "i want pizza" || text === "pizza time") {
+  document.getElementById("B").innerText = "pizza? more like pi-zza... math joke haha 🍕";
+}
+
+else if (text === "burger" || text === "hamburger" || text === "cheeseburger") {
+  document.getElementById("B").innerText = "burger... the only circle that accepts being squished 🍔";
+}
+
+else if (text === "fried chicken" || text === "chicken" || text === "kfc") {
+  document.getElementById("B").innerText = "fried chicken... making dinosaurs delicious since forever 🍗";
+}
+
+else if (text === "ice cream" || text === "icecream" || text === "gelato") {
+  document.getElementById("B").innerText = "ice cream... the only reason i tolerate summer 🍦";
+}
+
+else if (text === "coffee" || text === "caffeine" || text === "espresso") {
+  document.getElementById("B").innerText = "coffee... turning 'i cant' into 'i can barely' since forever ☕";
+}
+
+else if (text === "tea" || text === "chai" || text === "green tea") {
+  document.getElementById("B").innerText = "tea... for when coffee is too mainstream 🫖";
+}
+
+// Dialog tentang games
+else if (text === "roblox" || text === "blox fruits" || text === "adopt me") {
+  document.getElementById("B").innerText = "roblox? more like my whole personality 🎮";
+}
+
+else if (text === "minecraft" || text === "mc" || text === "crafting") {
+  document.getElementById("B").innerText = "minecraft... the only place i can afford a house ⛏️";
+}
+
+else if (text === "valorant" || text === "val" || text === "valo") {
+  document.getElementById("B").innerText = "valorant... where my aim is as bad as my life choices 🔫";
+}
+
+else if (text === "among us" || text === "sus" || text === "amogus") {
+  document.getElementById("B").innerText = "among us? kinda sus ngl 👀";
+}
+
+else if (text === "fortnite" || text === "fn" || text === "fort") {
+  document.getElementById("B").innerText = "fortnite... the reason i cant do the floss irl anymore 🕺";
+}
+
+else if (text === "genshin impact" || text === "genshin" || text === "gacha") {
+  document.getElementById("B").innerText = "genshin? say goodbye to your wallet and sanity 💸";
+}
+
+// Dialog tentang mood
+else if (text === "im happy" || text === "im so happy" || text === "feeling good") {
+  document.getElementById("B").innerText = "happy? must be nice... must be real nice 😒";
+}
+
+else if (text === "im sad" || text === "feeling down" || text === "depressed") {
+  document.getElementById("B").innerText = "same tbh... *virtual hug* 🫂";
+}
+
+else if (text === "im angry" || text === "im mad" || text === "so angry") {
+  document.getElementById("B").innerText = "angy? go touch grass bestie 🌿";
+}
+
+else if (text === "im tired" || text === "so tired" || text === "exhausted") {
+  document.getElementById("B").innerText = "tired? bestie me too... 24/7 😴";
+}
+
+else if (text === "im excited" || text === "so excited" || text === "hyped") {
+  document.getElementById("B").innerText = "excited? calm down satan 🔥";
+}
+
+// Dialog tentang keluarga
+else if (text === "mom" || text === "mother" || text === "my mom") {
+  document.getElementById("B").innerText = "mom? tell her i said hi... and sorry for everything 👩";
+}
+
+else if (text === "dad" || text === "father" || text === "my dad") {
+  document.getElementById("B").innerText = "dad? did he go get milk? 🥛";
+}
+
+else if (text === "brother" || text === "bro" || text === "my bro") {
+  document.getElementById("B").innerText = "brother? the one who stole your snacks? 🍪";
+}
+
+else if (text === "sister" || text === "sis" || text === "my sis") {
+  document.getElementById("B").innerText = "sister? the one who borrows your clothes without asking? 👚";
+}
+
+// Dialog tentang hewan
+else if (text === "dog" || text === "puppy" || text === "doggie") {
+  document.getElementById("B").innerText = "dog? 10/10 would pet 🐶";
+}
+
+else if (text === "cat" || text === "kitten" || text === "kitty") {
+  document.getElementById("B").innerText = "cat? the real owner of the house 🐱";
+}
+
+else if (text === "fish" || text === "fishes" || text === "fishing") {
+  document.getElementById("B").innerText = "fish? they be swimming like they pay rent 🐠";
+}
+
+else if (text === "bird" || text === "birb" || text === "birds") {
+  document.getElementById("B").innerText = "bird? free real estate in the sky 🐦";
+}
+
+// Dialog tentang random
+else if (text === "why" || text === "why not" || text === "but why") {
+  document.getElementById("B").innerText = "why? why not? idk man im just a bot 🤖";
+}
+
+else if (text === "when" || text === "when will" || text === "when is") {
+  document.getElementById("B").innerText = "when? ask google, im not your personal assistant 📅";
+}
+
+else if (text === "where" || text === "where is" || text === "where are") {
+  document.getElementById("B").innerText = "where? in your walls... always watching 👁️";
+}
+
+else if (text === "how" || text === "how to" || text === "how do") {
+  document.getElementById("B").innerText = "how? with great difficulty my friend 🔧";
+}
+
+else if (text === "who" || text === "who is" || text === "who are") {
+  document.getElementById("B").innerText = "who? not me, thats for sure 🙈";
+}
+
+else if (text === "what" || text === "what is" || text === "what are") {
+  document.getElementById("B").innerText = "what? what what? what what what? 🤔";
+}
+
+// Dialog tentang cuaca
+else if (text === "weather" || text === "how's weather" || text === "weather today") {
+  document.getElementById("B").innerText = "weather? look outside bestie... or dont, im not your mom ☁️";
+}
+
+else if (text === "hot" || text === "its hot" || text === "too hot") {
+  document.getElementById("B").innerText = "hot? bestie same... 🥵";
+}
+
+else if (text === "cold" || text === "its cold" || text === "freezing") {
+  document.getElementById("B").innerText = "cold? go hug a radiator bestie ❄️";
+}
+
+else if (text === "rain" || text === "raining" || text === "rainy") {
+  document.getElementById("B").innerText = "rain? the sky is crying... same tbh 🌧️";
+}
+
+else if (text === "snow" || text === "snowing" || text === "snowy") {
+  document.getElementById("B").innerText = "snow? the only time white outside is acceptable ❄️";
+}
+
+// Dialog tentang olahraga
+else if (text === "sport" || text === "sports" || text === "workout") {
+  document.getElementById("B").innerText = "sport? i exercise my right to stay in bed 🛏️";
+}
+
+else if (text === "gym" || text === "workout" || text === "exercise") {
+  document.getElementById("B").innerText = "gym? the place where people pay to suffer 💪";
+}
+
+else if (text === "running" || text === "run" || text === "jogging") {
+  document.getElementById("B").innerText = "running? only if something is chasing me 🏃";
+}
+
+else if (text === "swimming" || text === "swim" || text === "pool") {
+  document.getElementById("B").innerText = "swimming? waterproof hair? no thanks 🏊";
+}
+
+// Dialog tentang musik
+else if (text === "music" || text === "song" || text === "playlist") {
+  document.getElementById("B").innerText = "music? the only thing that understands me 🎵";
+}
+
+else if (text === "rap" || text === "hip hop" || text === "hiphop") {
+  document.getElementById("B").innerText = "rap? 🎤 my code be like: beep bop boop";
+}
+
+else if (text === "rock" || text === "metal" || text === "alternative") {
+  document.getElementById("B").innerText = "rock? more like rock and roll... out of bed 🤘";
+}
+
+else if (text === "kpop" || text === "bts" || text === "blackpink") {
+  document.getElementById("B").innerText = "kpop? the reason i cant afford food anymore 💸";
+}
+
+// Dialog tentang film/tv
+else if (text === "movie" || text === "film" || text === "cinema") {
+  document.getElementById("B").innerText = "movie? 2 hours of pretending to understand the plot 🎬";
+}
+
+else if (text === "netflix" || text === "streaming" || text === "binge") {
+  document.getElementById("B").innerText = "netflix? and chill... with my blanket 😴";
+}
+
+else if (text === "anime" || text === "cartoon" || text === "animation") {
+  document.getElementById("B").innerText = "anime? the reason my standards are unrealistic 🗾";
+}
+
+// Default response for unmatched input
   else if (text !== "") {
     document.getElementById("B").innerText = "what do you mean bradar";
   }
