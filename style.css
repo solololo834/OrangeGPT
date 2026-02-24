@@ -6,6 +6,25 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@keyframes wiggle {
+    0% { transform: rotate(0deg) scale(1); }
+    25% { transform: rotate(10deg) scale(1.2); }
+    50% { transform: rotate(-10deg) scale(1.4); }
+    75% { transform: rotate(5deg) scale(1.2); }
+    100% { transform: rotate(0deg) scale(1); }
+  }
+  #mic {
+    animation: wiggle 1.2s infinite ease-in-out;
+    font-size: 100px;
+    filter: drop-shadow(0 0 10px orange);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    
+  }
+
 body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
@@ -330,4 +349,4 @@ p {
         font-size: 0.85rem;
         padding: 10px 12px;
     }
-      }
+}
