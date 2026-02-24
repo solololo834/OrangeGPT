@@ -1,3 +1,108 @@
+document.getElementById("call").addEventListener("click", function() {
+  // Hitamkan layar
+  document.body.style.backgroundColor = "black";
+  document.body.style.color = "white";
+  
+  // Sembunyikan elemen utama
+  if (document.getElementById("A")) document.getElementById("A").style.display = "none";
+  if (document.getElementById("B")) document.getElementById("B").style.display = "none";
+  if (document.getElementById("C")) document.getElementById("C").style.display = "none";
+  if (document.getElementById("call")) document.getElementById("call").style.display = "none";
+  
+  // Sembunyikan semua audio (1-5)
+  for (let i = 1; i <= 5; i++) {
+    const audio = document.getElementById(i.toString());
+    if (audio) audio.hidden = true;
+  }
+  
+  // Sembunyikan elemen lain
+  const otherElements = ["song", "rizzs", "voice", "face", "drawing", "lemon"];
+  otherElements.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.hidden = true;
+  });
+  
+  // BARU MUNCULIN MIC (yang tadinya hidden)
+  const mic = document.getElementById("mic");
+  if (mic) {
+    mic.hidden = false; // <-- NIH DIA MUNCUL
+  }
+  
+  // Variabel untuk melacak audio yang sedang tampil
+  let currentAudio = null;
+  
+  // Timer munculin audio 1 (10 detik)
+  setTimeout(() => {
+    if (currentAudio) document.getElementById(currentAudio).hidden = true;
+    const a1 = document.getElementById("1");
+    if (a1) {
+      a1.hidden = false;
+      currentAudio = "1";
+    }
+  }, 10000);
+  
+  // Audio 2 (25 detik)
+  setTimeout(() => {
+    if (currentAudio) document.getElementById(currentAudio).hidden = true;
+    const a2 = document.getElementById("2");
+    if (a2) {
+      a2.hidden = false;
+      currentAudio = "2";
+    }
+  }, 25000);
+  
+  // Audio 3 (39 detik)
+  setTimeout(() => {
+    if (currentAudio) document.getElementById(currentAudio).hidden = true;
+    const a3 = document.getElementById("3");
+    if (a3) {
+      a3.hidden = false;
+      currentAudio = "3";
+    }
+  }, 39000);
+  
+  // Audio 4 (49 detik)
+  setTimeout(() => {
+    if (currentAudio) document.getElementById(currentAudio).hidden = true;
+    const a4 = document.getElementById("4");
+    if (a4) {
+      a4.hidden = false;
+      currentAudio = "4";
+    }
+  }, 49000);
+  
+  // Audio 5 (59 detik)
+  setTimeout(() => {
+    if (currentAudio) document.getElementById(currentAudio).hidden = true;
+    const a5 = document.getElementById("5");
+    if (a5) {
+      a5.hidden = false;
+      currentAudio = "5";
+    }
+  }, 59000);
+  
+  // Kembali ke tampilan awal setelah 64 detik
+  setTimeout(() => {
+    // Balikin warna
+    document.body.style.backgroundColor = "";
+    document.body.style.color = "";
+    
+    // Munculin lagi elemen utama
+    if (document.getElementById("A")) document.getElementById("A").style.display = "";
+    if (document.getElementById("B")) document.getElementById("B").style.display = "";
+    if (document.getElementById("C")) document.getElementById("C").style.display = "";
+    if (document.getElementById("call")) document.getElementById("call").style.display = "";
+    
+    // Munculin elemen lain
+    
+    
+    // SEMBUNYIKIN MIC LAGI
+    if (mic) mic.hidden = true; // <-- KEMBALI HIDDEN
+    
+    // Audio 5 tetep muncul
+  }, 64000);
+});
+  
 let lastInput = "";
 
 document.getElementById("A").addEventListener("input", function() {
@@ -337,151 +442,4 @@ else if (text === "im happy" || text === "im so happy" || text === "feeling good
   document.getElementById("B").innerText = "happy? must be nice... must be real nice 😒";
 }
 
-else if (text === "im sad" || text === "feeling down" || text === "depressed") {
-  document.getElementById("B").innerText = "same tbh... *virtual hug* 🫂";
-}
-
-else if (text === "im angry" || text === "im mad" || text === "so angry") {
-  document.getElementById("B").innerText = "angy? go touch grass bestie 🌿";
-}
-
-else if (text === "im tired" || text === "so tired" || text === "exhausted") {
-  document.getElementById("B").innerText = "tired? bestie me too... 24/7 😴";
-}
-
-else if (text === "im excited" || text === "so excited" || text === "hyped") {
-  document.getElementById("B").innerText = "excited? calm down satan 🔥";
-}
-
-// Dialog tentang keluarga
-else if (text === "mom" || text === "mother" || text === "my mom") {
-  document.getElementById("B").innerText = "mom? tell her i said hi... and sorry for everything 👩";
-}
-
-else if (text === "dad" || text === "father" || text === "my dad") {
-  document.getElementById("B").innerText = "dad? did he go get milk? 🥛";
-}
-
-else if (text === "brother" || text === "bro" || text === "my bro") {
-  document.getElementById("B").innerText = "brother? the one who stole your snacks? 🍪";
-}
-
-else if (text === "sister" || text === "sis" || text === "my sis") {
-  document.getElementById("B").innerText = "sister? the one who borrows your clothes without asking? 👚";
-}
-
-// Dialog tentang hewan
-else if (text === "dog" || text === "puppy" || text === "doggie") {
-  document.getElementById("B").innerText = "dog? 10/10 would pet 🐶";
-}
-
-else if (text === "cat" || text === "kitten" || text === "kitty") {
-  document.getElementById("B").innerText = "cat? the real owner of the house 🐱";
-}
-
-else if (text === "fish" || text === "fishes" || text === "fishing") {
-  document.getElementById("B").innerText = "fish? they be swimming like they pay rent 🐠";
-}
-
-else if (text === "bird" || text === "birb" || text === "birds") {
-  document.getElementById("B").innerText = "bird? free real estate in the sky 🐦";
-}
-
-// Dialog tentang random
-else if (text === "why" || text === "why not" || text === "but why") {
-  document.getElementById("B").innerText = "why? why not? idk man im just a bot 🤖";
-}
-
-else if (text === "when" || text === "when will" || text === "when is") {
-  document.getElementById("B").innerText = "when? ask google, im not your personal assistant 📅";
-}
-
-else if (text === "where" || text === "where is" || text === "where are") {
-  document.getElementById("B").innerText = "where? in your walls... always watching 👁️";
-}
-
-else if (text === "how" || text === "how to" || text === "how do") {
-  document.getElementById("B").innerText = "how? with great difficulty my friend 🔧";
-}
-
-else if (text === "who" || text === "who is" || text === "who are") {
-  document.getElementById("B").innerText = "who? not me, thats for sure 🙈";
-}
-
-else if (text === "what" || text === "what is" || text === "what are") {
-  document.getElementById("B").innerText = "what? what what? what what what? 🤔";
-}
-
-// Dialog tentang cuaca
-else if (text === "weather" || text === "how's weather" || text === "weather today") {
-  document.getElementById("B").innerText = "weather? look outside bestie... or dont, im not your mom ☁️";
-}
-
-else if (text === "hot" || text === "its hot" || text === "too hot") {
-  document.getElementById("B").innerText = "hot? bestie same... 🥵";
-}
-
-else if (text === "cold" || text === "its cold" || text === "freezing") {
-  document.getElementById("B").innerText = "cold? go hug a radiator bestie ❄️";
-}
-
-else if (text === "rain" || text === "raining" || text === "rainy") {
-  document.getElementById("B").innerText = "rain? the sky is crying... same tbh 🌧️";
-}
-
-else if (text === "snow" || text === "snowing" || text === "snowy") {
-  document.getElementById("B").innerText = "snow? the only time white outside is acceptable ❄️";
-}
-
-// Dialog tentang olahraga
-else if (text === "sport" || text === "sports" || text === "workout") {
-  document.getElementById("B").innerText = "sport? i exercise my right to stay in bed 🛏️";
-}
-
-else if (text === "gym" || text === "workout" || text === "exercise") {
-  document.getElementById("B").innerText = "gym? the place where people pay to suffer 💪";
-}
-
-else if (text === "running" || text === "run" || text === "jogging") {
-  document.getElementById("B").innerText = "running? only if something is chasing me 🏃";
-}
-
-else if (text === "swimming" || text === "swim" || text === "pool") {
-  document.getElementById("B").innerText = "swimming? waterproof hair? no thanks 🏊";
-}
-
-// Dialog tentang musik
-else if (text === "music" || text === "song" || text === "playlist") {
-  document.getElementById("B").innerText = "music? the only thing that understands me 🎵";
-}
-
-else if (text === "rap" || text === "hip hop" || text === "hiphop") {
-  document.getElementById("B").innerText = "rap? 🎤 my code be like: beep bop boop";
-}
-
-else if (text === "rock" || text === "metal" || text === "alternative") {
-  document.getElementById("B").innerText = "rock? more like rock and roll... out of bed 🤘";
-}
-
-else if (text === "kpop" || text === "bts" || text === "blackpink") {
-  document.getElementById("B").innerText = "kpop? the reason i cant afford food anymore 💸";
-}
-
-// Dialog tentang film/tv
-else if (text === "movie" || text === "film" || text === "cinema") {
-  document.getElementById("B").innerText = "movie? 2 hours of pretending to understand the plot 🎬";
-}
-
-else if (text === "netflix" || text === "streaming" || text === "binge") {
-  document.getElementById("B").innerText = "netflix? and chill... with my blanket 😴";
-}
-
-else if (text === "anime" || text === "cartoon" || text === "animation") {
-  document.getElementById("B").innerText = "anime? the reason my standards are unrealistic 🗾";
-}
-
-// Default response for unmatched input
-  else if (text !== "") {
-    document.getElementById("B").innerText = "what do you mean bradar";
-  }
-});
+else if (text 
